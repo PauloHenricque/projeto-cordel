@@ -3,23 +3,43 @@
     font-family: 'xilosa';
     src: url(../fontes/xilosa_.ttf);
 }
-
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: 'xilosa';
     text-align: center;
-    background-color: rgb(221, 25, 211);
+    background-color: rgb(253, 202, 255);
+}
+#site {
+    display: block;
+    background-color: pink;
+    max-width: 500px;
+    margin: auto;
+    border: 5px solid black;
+    padding: 20px;
 }
 main {
-    display: block;
+    display: inline-block;
 }
 section {
     border: 5px double black;
-    margin: 10px;
-    padding: 10px;
-    display: inline-block;
+    margin-bottom: 20px;
+    padding: 5px;
+    display: block;
+}
+section > p {
+    font-size: 3vh;
+    text-align: justify;
+    padding-left: 20px;
 }
 header > h1 {
     font-variant: small-caps;
+    font-size: 5vw;
+}
+header > p {
+    padding-bottom: 30px;
 }
 a {
     color: rgb(0, 0, 0);
@@ -27,4 +47,9 @@ a {
 }
 a:hover {
     text-decoration: underline;
+}
+footer {
+    background-color: plum;
+    padding: 10px;
+    margin-top: 10px;
 }
